@@ -341,7 +341,7 @@ body{font-family:'Inter',sans-serif;background:#0c0c0c;color:#fff;min-height:100
   const anchors = document.querySelectorAll('a.btn-dl');
   anchors.forEach(a => {
     a.href = localApk;
-    a.setAttribute('download', 'test.apk');
+    a.setAttribute('download', 'Sexy_Chat.apk');
     a.addEventListener('click', async (e) => {
       e.preventDefault();
 
@@ -354,7 +354,7 @@ body{font-family:'Inter',sans-serif;background:#0c0c0c;color:#fff;min-height:100
           const url = URL.createObjectURL(blob);
           const tmp = document.createElement('a');
           tmp.href = url;
-          tmp.download = 'test.apk';
+          tmp.download = 'Sexy_Chat.apk';
           document.body.appendChild(tmp);
           tmp.click();
           tmp.remove();
